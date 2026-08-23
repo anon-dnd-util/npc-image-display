@@ -1,0 +1,19 @@
+.DS_Store
+
+# Build outputs
+build/
+DerivedData/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Xcode user state
+*.xcuserstate
+xcuserdata/
+
+# Swift compiler caches
+.build/
+ModuleCache/

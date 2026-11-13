@@ -14,7 +14,7 @@ The intended setup is:
 2. Keep the iPad and Mac on the same Wi-Fi network.
 3. Use either the macOS drag-and-drop app or the Python client on the Mac to send an image to the iPad.
 
-The iPad app targets iOS 12.0 and listens on port `8080`.
+The iPad app targets iOS 15.0 and listens on port `8080`.
 It also advertises itself with Bonjour as `_npc-image._tcp`.
 The Bonjour display name includes the iOS device model and device name, for example `iPad Air 1 - Game Table iPad`.
 
@@ -144,6 +144,4 @@ If a direct IP command times out:
 - Try `python mac_client/send_image.py --discover --clear`.
 - If iOS asks for local network access, allow it.
 
-## Notes for iPad Air 1
-
-The iPad Air 1 can run iOS 12. Use the project deployment target `12.0`. You may need an Xcode version that can deploy to your specific device/iOS combination.
+The original iPad Air cannot run iOS 15 and is not supported by this build.
